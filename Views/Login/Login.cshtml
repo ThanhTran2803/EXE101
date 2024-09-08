@@ -1,0 +1,523 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Modern Login Page | AsmrProg</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/Login.css">
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form method="post" id="Register" action="@Url.Action("Register", "Login")">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a asp-controller="Login" asp-action="Register" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" id="NameRegister" name="NameRegister">
+                <div id="blankInputMessage" style="display: none" class="text-danger">Please input your name!</div>
+                <input type="password" placeholder="Password" id="PasswordRegister" name="PasswordRegister">
+                <div class="password-chk">
+                    <input style="margin:0px !important; width : initial !important" type="checkbox" id="chk">
+                    <p style="margin:0px !important">Show Password </p>
+                </div>
+                <div id="blankPasswordMessage" style="display: none" class="text-danger">Password must be at least 8 characters or more!</div>
+                <input type="password" placeholder="Confirm Password" id="ConfirmPasswordRegister" name="ConfirmPasswordRegister" oninput="validatePasswords()">
+                <div id="ValidatePassword" class="text-danger" style="display: none">Confirm Password not match</div>
+                <div class="email-otp">
+                    <input type="email" placeholder="Email" id="EmailRegister" name="EmailRegister">
+                    <button type="button" class="send-otp" onclick="sendOTP()">Send OTP</button>
+                </div>
+                <div id="blankEmailMessage" style="display: none" class="text-danger">Please input your email!</div>
+                <div id="blankOTPMessage" style="display: none" class="text-danger">Please send OTP first!</div>
+                <div id="otpSentMessage" style="display: none; color:#009966">OTP sent successfully</div>
+                <input type="text" placeholder="Verify Email" id="OTP" name="OTP" required>
+                <div id="EmailRegister-error" class="text-danger"></div>
+                <div id="SubmitFormSentMessage" style="display: none; color:#009966">Submit Form successfully</div>
+                <div id="CheckPassMessage" style="display: none" class="text-danger">Please check confirm password!</div>
+                <button type="button" class="submit-form" onclick="submitForm()">Sign Up</button>
+            </form>
+        </div>  
+        <div class="form-container sign-in">    
+            <form method="post">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a asp-controller="Login" asp-action="Login" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email" id="EmailLogin" name="EmailLogin">  
+                <input type="password" placeholder="Password" id="PasswordLogin" name="PasswordLogin" required minlength="8" title="Password must be at least 8 characters or more">
+                <div class="text-danger">
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                </div>
+                <div id="EmailLogin-error" class="text-danger"></div>
+                <div id="OTPLogin" style="display: none; color:#009966">OTP sent successfully</div>
+                <div id="ChangesPass" style="display: none; color:#009966">Changes Password successfully</div>
+                <a href="#" id="ForgotPassword" name="ForgotPassword">Forget Your Password?</a>
+                <button type="Submit">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your profile information to become education center</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register your profile information to become education center</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal OTP -->
+    <div class="modal fade" id="OTPModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">  
+                    <h5 class="modal-title" id="ForgotPasswordTitle">Enter OTP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control otp-input" id="OTP1" maxlength="1">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control otp-input" id="OTP2" maxlength="1">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control otp-input" id="OTP3" maxlength="1">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control otp-input" id="OTP4" maxlength="1">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control otp-input" id="OTP5" maxlength="1">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control otp-input" id="OTP6" maxlength="1">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="SubmitOTP()">Verify OTP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ChangePassword -->
+    <div class="modal fade" id="ChangePasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ChangePasswordTitle">Change Password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="NewPassword">New Password</label>
+                        <input type="password" class="form-control" id="NewPassword" placeholder="Enter new password" oninput="lengthNewPassword()">
+                        <div id="Length" style="display: none; color : #dc3545">Password must be at least 8 characters or more.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ConfirmNewPassword">Confirm New Password</label>
+                        <input type="password" class="form-control" id="ConfirmNewPassword" placeholder="Confirm new password" oninput="validateNewPassword()">
+                        <div id="Validate" style="display: none; color : #dc3545">Confirm Password not match.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="SaveChanges()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/js/Login.js"></script>
+    <style>
+        .text-danger {
+            color: #dc3545;
+        }
+    </style>
+
+    <script>
+        function validatePasswords() {
+            var password = document.getElementById("PasswordRegister").value.trim();
+            var confirmPassword = document.getElementById("ConfirmPasswordRegister").value.trim();
+
+            if (password != confirmPassword) {
+                document.getElementById("ValidatePassword").style.display = "block";
+            } else {
+                document.getElementById("ValidatePassword").style.display = "none";
+            }
+        }   
+    </script>
+
+
+    <script>
+        function validateNewPassword() {
+            var newPassword = document.getElementById("NewPassword").value.trim();
+            var confirmNewPassword = document.getElementById("ConfirmNewPassword").value.trim();
+            if (confirmNewPassword.trim() === '') {
+                document.getElementById("Validate").style.display = "none";
+            } else {
+                if (newPassword != confirmNewPassword) {
+                    document.getElementById("Validate").style.display = "block";
+                } else {
+                    document.getElementById("Validate").style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <script>
+        function lengthNewPassword() {
+            var newPassword = document.getElementById("NewPassword").value.trim();
+            if (newPassword.length < 8)
+            {
+                document.getElementById("Length").style.display = "block";
+            }
+            else{
+                document.getElementById("Length").style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        function sendOTP() {
+            var emailregister = document.getElementById("Register").querySelector("#EmailRegister").value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/Login/SendOTP", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = JSON.stringify(emailregister);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.success) {
+                        document.getElementById("blankOTPMessage").style.display = "none";
+                        document.getElementById("otpSentMessage").style.display = "block";
+                    } 
+                    else 
+                    {
+                        var errors = response.errors;
+                        for (var key in errors) {
+                            var errorMessages = errors[key];
+                            var errorMessage = errorMessages.join(", ");
+                            var errorElement = document.getElementById(key + "-error");
+                            if (errorElement) {
+                                errorElement.textContent = errorMessage;
+                            }
+                        }
+                    }
+                } 
+                else 
+                {
+                    console.log("Error: " + xhr.statusText);
+                }
+            };
+
+            xhr.send(data);
+        }
+    </script>
+
+    <script>
+        function submitForm() {
+            var otpSentMessage = document.getElementById("otpSentMessage");
+            var validatePassword = document.getElementById("ValidatePassword");
+            var confirmPasswordRegister = document.getElementById("ConfirmPasswordRegister").value.trim();
+            var nameRegister = document.getElementById("NameRegister").value.trim();
+            var passwordRegister = document.getElementById("PasswordRegister").value.trim();
+            var emailRegister = document.getElementById("EmailRegister").value.trim();
+
+            function showElementById(id) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.style.display = "block";
+                }
+            }
+
+            function hideElementById(id) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.style.display = "none";
+                }
+            }
+
+            function hideAllErrorMessages() {
+                hideElementById("blankInputMessage");
+                hideElementById("blankPasswordMessage");
+                hideElementById("blankOTPMessage");
+                hideElementById("CheckPassMessage");
+                hideElementById("blankEmailMessage");
+            }
+
+            if (nameRegister === ""){
+                hideAllErrorMessages()
+                document.getElementById("blankInputMessage").style.display = "block";
+            }
+            else if (passwordRegister.length < 8) {
+                hideAllErrorMessages()
+                document.getElementById("blankPasswordMessage").style.display = "block";
+            }
+            else if (validatePassword.style.display === "block" || confirmPasswordRegister === "") {
+                hideAllErrorMessages()
+                document.getElementById("CheckPassMessage").style.display = "block";
+            }
+            else if (emailRegister ===""){
+                hideAllErrorMessages()
+                document.getElementById("blankEmailMessage").style.display = "block";
+            }
+            else if (otpSentMessage.style.display === "none"){
+                hideAllErrorMessages()
+                document.getElementById("blankOTPMessage").style.display = "block";
+            } 
+            else
+            {
+                hideAllErrorMessages()
+                var form = document.getElementById("Register");
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", form.action, true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                var formData = {
+                    NameRegister: form.querySelector("#NameRegister").value,
+                    PasswordRegister: form.querySelector("#PasswordRegister").value,
+                    EmailRegister: form.querySelector("#EmailRegister").value,
+                    OTP: form.querySelector("#OTP").value
+                };
+
+                var data = JSON.stringify(formData);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        if (response.success) {
+                            var errorElements = document.querySelectorAll('.text-danger');
+                            errorElements.forEach(function (element) {
+                                element.textContent = '';
+                            });
+                            hideAllErrorMessages();
+                            showElementById("SubmitFormSentMessage");
+                        }
+                        else {
+                            var errors = response.errors;
+                            for (var key in errors) {
+                                var errorMessages = errors[key];
+                                var errorMessage = errorMessages.join(", ");
+                                var errorElement = document.getElementById(key + "-error");
+                                if (errorElement) {
+                                    errorElement.textContent = errorMessage;
+                                }
+                            }
+                        }
+                    }
+                    else 
+                    {
+                        console.log("Error: " + xhr.statusText);
+                    }
+                }
+                xhr.send(data);
+            };
+        }
+    </script>
+
+    <script>
+        function forgotPassword() {
+            var emailLogin = document.getElementById("EmailLogin").value;
+
+            if (emailLogin.trim() === "") {
+                alert("Please enter your email.");
+                return;
+            }
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/Login/ForgotPass", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            var data = JSON.stringify(emailLogin);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.success) {
+                        var errorElements = document.querySelectorAll('.text-danger');
+                        errorElements.forEach(function (element) {
+                            element.textContent = '';
+                        });
+                        document.getElementById("OTPLogin").style.display = "block";
+                        showOTPModal();
+                    }
+                    else {
+                        var errors = response.errors;
+                        for (var key in errors) {
+                            var errorMessages = errors[key];
+                            var errorMessage = errorMessages.join(", ");
+                            var errorElement = document.getElementById(key + "-error");
+                            if (errorElement) {
+                                errorElement.textContent = errorMessage;
+                            }
+                        }
+                    }
+                }
+            }
+            xhr.send(data);
+        }
+    </script>
+
+    <script>
+        document.getElementById("ForgotPassword").addEventListener("click", function (event) {
+            event.preventDefault();
+            forgotPassword();
+        });
+
+        function showOTPModal() {
+            document.getElementById("OTPModal").classList.add("show");
+            $('#OTPModal').modal('show');
+        }
+
+        function hideOTPModal() {
+            $('#OTPModal').modal('hide');
+        }
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var otpInputs = document.querySelectorAll('.otp-input');
+
+            otpInputs.forEach(function (input) {
+                input.addEventListener('input', function () {
+                    if (this.value.length >= 1) {
+                        var nextSibling = this.parentElement.nextElementSibling;
+                        if (nextSibling && nextSibling.querySelector('.otp-input')) {
+                            var nextInput = nextSibling.querySelector('.otp-input');
+                            nextInput.focus();
+                        }
+                    }
+                });
+
+                input.addEventListener('focus', function () {
+                    this.select();
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        function SubmitOTP(){
+            var otpnumber = "";
+
+            for (var i = 1; i <= 6; i++) {
+                var digit = document.getElementById("OTP" + i).value.trim();
+                if (digit === "") {
+                    alert("Please enter all OTP digits.");
+                    return;
+                }
+
+                otpnumber += digit;
+            }
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/Login/VerifyOTP", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            var data = JSON.stringify(otpnumber);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.success) {
+                        showChangePasswordModal();
+                    }
+                    else {
+                        alert("OTP verification failed. Please try again.");
+                    }
+                }
+            }
+            xhr.send(data);
+        }
+    </script>
+
+    <script>
+        function showChangePasswordModal() {
+            document.getElementById("ChangePasswordModal").classList.add("show");
+            $('#ChangePasswordModal').modal('show');
+        }
+
+        function hideChangePasswordModal() {
+            $('#ChangePasswordModal').modal('hide');
+        }
+    </script>
+
+    <script>
+        function SaveChanges() {
+            var confirmNewPassword = document.getElementById("ConfirmNewPassword").value.trim();
+            console.log("confirmNewPassword: ", confirmNewPassword);
+            console.log("Validate: ", document.getElementById("Validate").style.display);
+            console.log("NewPass: ", document.getElementById("NewPassword").value.trim());
+
+            if (document.getElementById("Validate").style.display === "block" || confirmNewPassword === "") {
+                alert("Please check confirm password first!");
+            }
+            else {
+                var newPassword = document.getElementById("NewPassword").value.trim();
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "/Login/ChangePass", true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                var data = JSON.stringify(newPassword);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        if (response.success) {
+                            document.getElementById("OTPLogin").style.display = "none";
+
+                            document.getElementById("ChangesPass").style.display = "block";
+
+                            hideChangePasswordModal();
+                            hideOTPModal();
+                        }
+                    }
+                }
+                xhr.send(data);
+            }
+        }
+    </script>
+
+    <script>
+        var pwd = document.getElementById("PasswordRegister");
+        var chk = document.getElementById("chk");
+
+        chk.onchange = function(e){
+            pwd.type = chk.checked ? "text" : "password";
+        };
+    </script>
+</body>
+
+</html>

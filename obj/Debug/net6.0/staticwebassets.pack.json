@@ -1,0 +1,553 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EXE101.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EXE101.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\css\\flex-slider.css",
+      "PackagePath": "staticwebassets\\css\\flex-slider.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\css\\output.css",
+      "PackagePath": "staticwebassets\\css\\output.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\css\\owl.css",
+      "PackagePath": "staticwebassets\\css\\owl.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\css\\templatemo-cyborg-gaming.css",
+      "PackagePath": "staticwebassets\\css\\templatemo-cyborg-gaming.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\avatar-01.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar-01.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\avatar-02.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar-02.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\avatar-03.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar-03.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\avatar-04.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar-04.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-bg.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\clip-01.jpg",
+      "PackagePath": "staticwebassets\\images\\clip-01.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\clip-02.jpg",
+      "PackagePath": "staticwebassets\\images\\clip-02.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\clip-03.jpg",
+      "PackagePath": "staticwebassets\\images\\clip-03.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\clip-04.jpg",
+      "PackagePath": "staticwebassets\\images\\clip-04.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\details-01.jpg",
+      "PackagePath": "staticwebassets\\images\\details-01.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\details-02.jpg",
+      "PackagePath": "staticwebassets\\images\\details-02.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\details-03.jpg",
+      "PackagePath": "staticwebassets\\images\\details-03.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\feature-left.jpg",
+      "PackagePath": "staticwebassets\\images\\feature-left.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\feature-right.jpg",
+      "PackagePath": "staticwebassets\\images\\feature-right.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\featured-01.jpg",
+      "PackagePath": "staticwebassets\\images\\featured-01.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\featured-02.jpg",
+      "PackagePath": "staticwebassets\\images\\featured-02.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\featured-03.jpg",
+      "PackagePath": "staticwebassets\\images\\featured-03.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\game-01.jpg",
+      "PackagePath": "staticwebassets\\images\\game-01.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\game-02.jpg",
+      "PackagePath": "staticwebassets\\images\\game-02.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\game-03.jpg",
+      "PackagePath": "staticwebassets\\images\\game-03.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\popular-01.jpg",
+      "PackagePath": "staticwebassets\\images\\popular-01.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\popular-02.jpg",
+      "PackagePath": "staticwebassets\\images\\popular-02.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\popular-03.jpg",
+      "PackagePath": "staticwebassets\\images\\popular-03.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\popular-04.jpg",
+      "PackagePath": "staticwebassets\\images\\popular-04.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\popular-05.jpg",
+      "PackagePath": "staticwebassets\\images\\popular-05.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\popular-06.jpg",
+      "PackagePath": "staticwebassets\\images\\popular-06.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\popular-07.jpg",
+      "PackagePath": "staticwebassets\\images\\popular-07.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\popular-08.jpg",
+      "PackagePath": "staticwebassets\\images\\popular-08.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\profile-header.jpg",
+      "PackagePath": "staticwebassets\\images\\profile-header.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\service-01.jpg",
+      "PackagePath": "staticwebassets\\images\\service-01.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\service-02.jpg",
+      "PackagePath": "staticwebassets\\images\\service-02.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\service-03.jpg",
+      "PackagePath": "staticwebassets\\images\\service-03.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\stream-01.jpg",
+      "PackagePath": "staticwebassets\\images\\stream-01.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\stream-02.jpg",
+      "PackagePath": "staticwebassets\\images\\stream-02.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\stream-03.jpg",
+      "PackagePath": "staticwebassets\\images\\stream-03.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\stream-04.jpg",
+      "PackagePath": "staticwebassets\\images\\stream-04.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\stream-05.jpg",
+      "PackagePath": "staticwebassets\\images\\stream-05.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\stream-06.jpg",
+      "PackagePath": "staticwebassets\\images\\stream-06.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\stream-07.jpg",
+      "PackagePath": "staticwebassets\\images\\stream-07.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\images\\stream-08.jpg",
+      "PackagePath": "staticwebassets\\images\\stream-08.jpg"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\js\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Login.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\js\\isotope.js",
+      "PackagePath": "staticwebassets\\js\\isotope.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\js\\isotope.min.js",
+      "PackagePath": "staticwebassets\\js\\isotope.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\js\\owl-carousel.js",
+      "PackagePath": "staticwebassets\\js\\owl-carousel.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\js\\popup.js",
+      "PackagePath": "staticwebassets\\js\\popup.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\js\\tabs.js",
+      "PackagePath": "staticwebassets\\js\\tabs.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\vendor\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\vendor\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\vendor\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\vendor\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\vendor\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\dotNET\\EXE101\\EXE101\\wwwroot\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EXE101.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.EXE101.props",
+      "PackagePath": "build\\EXE101.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.EXE101.props",
+      "PackagePath": "buildMultiTargeting\\EXE101.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.EXE101.props",
+      "PackagePath": "buildTransitive\\EXE101.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
